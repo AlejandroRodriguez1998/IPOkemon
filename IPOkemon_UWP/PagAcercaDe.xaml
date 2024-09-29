@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="IPOkemon_UWP.PagAcercaDe"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPOkemon_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White" Height="601" Width="868" MinHeight="601" MinWidth="868">
+
+    <Grid>
+        <TextBlock x:Uid="TransAcercaDe" HorizontalAlignment="Left" Margin="74,53,0,0" Text="ACERCA DE IPOkemon" TextWrapping="Wrap" 
+                   VerticalAlignment="Top" FontSize="51" FontWeight="Bold" Foreground="Black"/>
+        <Image Source="Assets/portada.png" Margin="15,193,0,0" Grid.ColumnSpan="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="270" Width="430"/>
+        <TextBlock x:Uid="TransDescrAcerca" HorizontalAlignment="Left" Margin="399,177,0,0" Text="Versión:   1.1.2&#xD;&#xA;&#xD;&#xA;Autores:   Alejandro Paniagua Rodríguez&#xD;&#xA;                Enrique Rubio Gonzalo&#xD;&#xA;                Clara Sacedón Ortega&#xD;&#xA;&#xD;&#xA;Fecha de lanzamiento: Junio 2022&#xD;&#xA;&#xD;&#xA;Todos los derechos reservados ©&#xD;&#xA;&#xD;&#xA;"
+                   TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" Height="392" Width="465" Foreground="Black"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="IPOkemon_UWP.PagConfi"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPOkemon_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White" Height="649" Width="909" MinHeight="649" MinWidth="909">
+
+    <Grid>
+        <TextBlock x:Uid="TransTitulo" HorizontalAlignment="Left" Margin="58,46,0,0" Text="PERSONALIZATION" TextWrapping="Wrap" 
+                   VerticalAlignment="Top" FontSize="43" FontWeight="Bold" Foreground="Black"/>
+
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Margin="80,192,0,224" Width="801">
+            <HyperlinkButton x:Uid="TransEspa" Name="spanish" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Click="HyperlinkButton_Click" />
+            <HyperlinkButton x:Uid="TransIngles" x:Name="english" Click="HyperlinkButton_Click" Width="52" />
+        </StackPanel>
+        <TextBlock x:Uid="TransIdioma" HorizontalAlignment="Left" Margin="58,158,0,0" Text="Idioma:" TextWrapping="Wrap" 
+                   VerticalAlignment="Top" FontSize="25" 
+                   RenderTransformOrigin="0.488,0.455" Foreground="Black"/>
+
+        <Image Source="Assets/spain.png" Width="15" Height="15" Margin="65,206,829,428"/>
+        <Image Source="Assets/uk.png" Width="15" Height="15" Margin="65,244,829,390"/>
+        <TextBlock x:Uid="TransDescrip" HorizontalAlignment="Left" Margin="65,123,0,0" Text="Haga click encima del nombre que desea cambiar el idioma" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Height="22" Foreground="Black"/>
+
+    </Grid>
+</Page>

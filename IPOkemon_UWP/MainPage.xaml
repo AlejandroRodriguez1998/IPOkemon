@@ -1,0 +1,98 @@
+﻿<Page
+    x:Class="IPOkemon_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Extensions="using:Microsoft.Toolkit.Uwp.UI"
+    mc:Ignorable="d"
+    Background="White" MinHeight="650" MinWidth="1200">
+
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="330"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <RelativePanel Grid.Column="0">
+            <Grid Margin="30,0,0,0" Height="522" Width="294">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <RelativePanel Grid.Row="0" x:Name="rpLogo" HorizontalAlignment="Center" Width="294">
+                    <Grid x:Name="Logo" Height="98" Width="294">
+                        <Image Source="Assets/logo_IPOkemon.png" Stretch="Fill" Margin="20,18,10,-8"/>
+                    </Grid>
+                </RelativePanel>
+
+                <RelativePanel Grid.Row="1" x:Name="RPinicio" Margin="8,21,20,10" 
+                               PointerPressed="RPinicio_PointerPressed">
+                    <Image Source="Assets/home.png" Width="35" Margin="20" Name="InicioIcon"/>
+                    <TextBlock x:Uid="TransInicio" RelativePanel.RightOf="InicioIcon"
+                               Text="Inicio"
+                               Name="tbInicio"
+                               FontSize="23"
+                               Foreground="Black"
+                               FontWeight="Bold"
+                               RelativePanel.AlignVerticalCenterWithPanel="True"
+                               PointerEntered="TBinicio_PointerEntered"
+                               PointerExited="TBinicio_PointerExited"/>
+                </RelativePanel>
+
+                <RelativePanel Grid.Row="2" x:Name="RPpokedex" Margin="10,21,18,10" 
+                               PointerPressed="RPpokedex_PointerPressed">
+                    <Image Source="Assets/pokebola.png"
+                           Width="35" Margin="20" Name="PokedexIcon"/>
+                    <TextBlock RelativePanel.RightOf="PokedexIcon"
+                               Text="Pokedex"
+                               Name="tbPokedex"
+                               FontSize="23"
+                               Foreground="Black"
+                               FontWeight="Bold"
+                               RelativePanel.AlignVerticalCenterWithPanel="True"
+                               PointerEntered="TBpokedex_PointerEntered"
+                               PointerExited="TBpokedex_PointerExited"/>
+                </RelativePanel>
+
+                <RelativePanel Grid.Row="3" x:Name="RPconfiguracion" Margin="10,21,18,10" 
+                               PointerPressed="RPconfiguracion_PointerPressed">
+                    <Image Source="Assets/settings.png"
+                           Width="35" Margin="20" Name="ConfiIcon"/>
+                    <TextBlock x:Uid="TransConfi" RelativePanel.RightOf="ConfiIcon"
+                               Text="Configuración"
+                               Name="tbConfiguracion"
+                               FontSize="23"
+                               Foreground="Black"
+                               FontWeight="Bold"
+                               RelativePanel.AlignVerticalCenterWithPanel="True"
+                               PointerEntered="tbConfiguracion_PointerEntered"
+                               PointerExited="tbConfiguracion_PointerExited"/>
+                </RelativePanel>
+
+                <RelativePanel Grid.Row="4" x:Name="RPacercaDe" Margin="10,21,18,10" 
+                               PointerPressed="RPacercaDe_PointerPressed">
+                    <Image Source="Assets/boton-de-informacion.png"
+                           Width="35" Margin="20" Name="AcercaDeIcon"/>
+                    <TextBlock x:Uid="TransAcerca" RelativePanel.RightOf="AcercaDeIcon"
+                               Text="Acerca de"
+                               Name="tbAcercaDe"
+                               FontSize="23"
+                               Foreground="Black"
+                               FontWeight="Bold"
+                               RelativePanel.AlignVerticalCenterWithPanel="True"
+                               PointerEntered="TBacercaDe_PointerEntered"
+                               PointerExited="TBacercaDe_PointerExited"/>
+                </RelativePanel>
+            </Grid>
+        </RelativePanel>
+
+        <Grid Grid.Column="1" Background="White" Margin="15" CornerRadius="30" Name="Pagina">
+            <Frame x:Name="MyFrame"/>
+        </Grid>
+    </Grid>
+</Page>

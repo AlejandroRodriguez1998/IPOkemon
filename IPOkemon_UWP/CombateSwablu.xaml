@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="IPOkemon_UWP.CombateSwablu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPOkemon_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent" Height="585" Width="454" MinHeight="585" MinWidth="454">
+
+    <Grid>
+        <local:UserControl_Swablu HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ProgressBar x:Name="pbVida" HorizontalAlignment="Center" Height="38" Margin="0,33,0,0" 
+                     VerticalAlignment="Top" Width="399" IsTabStop="False" Value="100" Foreground="#FF0AD700"/>
+    </Grid>
+</Page>

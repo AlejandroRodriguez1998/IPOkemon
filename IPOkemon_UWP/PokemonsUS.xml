@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pokemons>
+	<Pokemon Nombre="Charmander"
+			 Numero="004"
+			 Descripcion="It prefers hot things. It is said that when it rains, steam comes out of the tip of its tail."
+			 Tipos="Fire"
+			 Debilidades="Water,Earth,Rock"
+			 Habilidad="Sea of Flames"
+			 Categoria="Lizard"
+			 ImagenPokemonPrincipal="Assets/Charmander.png"/>
+
+	<Pokemon Nombre="Swablu"
+			 Numero="333"
+			 Descripcion="Their cottony wings contain air, which gives them a soft, fluffy feel. They are continually groomed."
+			 Tipos="Flying, Normal"
+			 Debilidades="Electric, Ice, Rock"
+			 Habilidad="Natural cure"
+			 Categoria="Cotton bird"
+			 ImagenPokemonPrincipal="Assets/Swablu.png"/>
+
+	<Pokemon Nombre="Electrode"
+			 Numero="101"
+			 Descripcion="It stores so much electrical energy in its body that the slightest impact can cause a large explosion."
+			 Tipos="Electric"
+			 Debilidades="Earth"
+			 Habilidad="Static electricity"
+			 Categoria="Ball"
+			 ImagenPokemonPrincipal="Assets/Electrode.png"/>
+</Pokemons>

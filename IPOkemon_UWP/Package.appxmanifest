@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="c08b4db6-3835-4d4a-bc1e-b3d889357059"
+    Publisher="CN=Clara"
+    Version="1.0.3.0" />
+
+  <mp:PhoneIdentity PhoneProductId="c08b4db6-3835-4d4a-bc1e-b3d889357059" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>IPOkemon_UWP</DisplayName>
+    <PublisherDisplayName>Clara</PublisherDisplayName>
+    <Logo>Assets\icono.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="IPOkemon_UWP.App">
+      <uap:VisualElements
+        DisplayName="IPOkemon_UWP"
+        Square150x150Logo="Assets\icono.png"
+        Square44x44Logo="Assets\icono.png"
+        Description="IPOkemon_UWP"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\portada3.png" Square71x71Logo="Assets\icono.png" Square310x310Logo="Assets\icono.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Assets\portada3-sinFondo.png" />
+        <uap:LockScreen BadgeLogo="Assets\icono.png" Notification="badge"/>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

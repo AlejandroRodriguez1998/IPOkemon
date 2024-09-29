@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pokemons>
+	<Pokemon Nombre="Charmander"
+			 Numero="004"
+			 Descripcion="Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor de la punta de la cola."
+			 Tipos="Fuego"
+			 Debilidades="Agua,Tierra,Roca"
+			 Habilidad="Mar Llamas"
+			 Categoria="Lagartija"
+			 ImagenPokemonPrincipal="Assets/Charmander.png"/>
+	
+	<Pokemon Nombre="Swablu"
+			 Numero="333"
+			 Descripcion="Sus alas algodonadas contienen aire, lo que les aporta un tacto suave y esponjoso. Se las acicala continuamente."
+			 Tipos="Volador, Normal"
+			 Debilidades="Electrico, Hielo, Roca"
+			 Habilidad="Cura natural"
+			 Categoria="Ave algodón"
+			 ImagenPokemonPrincipal="Assets/Swablu.png"/>
+	
+	<Pokemon Nombre="Electrode"
+			 Numero="101"
+			 Descripcion="Almacena tal cantidad de energía eléctrica en su cuerpo que el más leve impacto puede provocar una gran explosión."
+			 Tipos="Eléctrico"
+			 Debilidades="Tierra"
+			 Habilidad="Electricidad estática"
+			 Categoria="Bola"
+			 ImagenPokemonPrincipal="Assets/Electrode.png"/>
+</Pokemons>

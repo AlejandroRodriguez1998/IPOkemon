@@ -1,0 +1,1117 @@
+﻿<UserControl
+    x:Class="IPOkemon_UWP.UserControl_Swablu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPOkemon_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="volar" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="alita_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-14.472"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="14.382"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-14.594"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="alita_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="20.545"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-12.36"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="20.585"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bolaAtaque1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="alita_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="14.306"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.694"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="14.306"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="cuerpo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="piquito_abajo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.193"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.193"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.193"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="piquito_abajo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-0.358"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15.358"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.358"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="piquito_arriba">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="alita_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="15.23"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-5.77"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="15.23"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="alita_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="2.643"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.643"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="2.643"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="patita1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.167"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="patita1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-14.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="patita2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.167"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="patita2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-14.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="patita3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-0.15"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.817"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-0.317"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="patita3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.737"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-12.93"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.737"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="patita4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.176"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.491"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.009"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="patita4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-1.949"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-16.616"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-1.949"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="colita">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-2.9260717057361809"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-2.926"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-2.926"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="colita">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.92637475760562"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-12.74"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.593"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="raya_cola">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-13.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.083"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="raya_cola">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="antena_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="14.046"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.713"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="14.046"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="antena_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="16.093"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.76"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="16.093"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="antena_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-18.09"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-19.423"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-18.09"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="antena_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-86.252"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-87.585"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-86.252"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="shiny" AutoReverse="False" RepeatBehavior="1x">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="antena_izq" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF2DA4DE"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFFFE800"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="antena_izq" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF8FCDF2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="antena_izq" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF8CCBF0"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF1EAA4"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="antena_izq" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.243"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="antena_izq" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.364"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.418"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="antena_der" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF90CDF2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF1EAA4"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="antena_der" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF8DCDF2"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="antena_der" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF3EA5D7"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFFFE800"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="antena_der" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.364"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.423"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="antena_der" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.243"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="cuerpo" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF1D79AA"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFFFE800"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="cuerpo" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF71BFEB"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF3E662"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="alita_izq" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.498"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="alita_izq" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.685"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="alita_izq" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFCDE8F5"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="alita_izq" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA6ECF0"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF5F9A1"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="alita_izq">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF0DD7EC"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFFFE700"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)" Storyboard.TargetName="alita_der">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF0DD7EC"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFFFE700"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="alita_der" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.566"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="alita_der" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.984"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="alita_der" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF88E9EE"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="alita_der" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA8ECF0"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF5F9A1"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="piquito_arriba" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA7CFF0"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF0F0A7"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="piquito_abajo">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFC5DFF4"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF2F4C5"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="colita" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF2995C8"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF3FF00"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="colita" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF73C4EF"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="White"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="raya_cola">
+                <EasingColorKeyFrame KeyTime="0" Value="#FF4CC2F7"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF1EAA4"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="patita1" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="White"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF1EAA4"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="patita1" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.427"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="patita2" EnableDependentAnimation="True">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.414"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="patita2" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA4EEF1"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF1EAA4"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="patita3" EnableDependentAnimation="True">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFA4EEF1"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFF1EAA4"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="imgBrillo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00" Storyboard.TargetName="bolaAtaque1" Storyboard.TargetProperty="(UIElement.Opacity)" To="0"/>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="alita_izq" Storyboard.TargetProperty="(FrameworkElement.FocusVisualSecondaryBrush).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00" Value="#99FFFFFF"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.8000000" Value="#99FFFFFF"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="patita3" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Offset)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.259"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.41"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="patita4" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[3].(GradientStop.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:00" Value="#FFA4EEF1"/>
+                <EasingColorKeyFrame KeyTime="00:00:00.8000000" Value="#FFF1EAA4"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="atacado" AutoReverse="True">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cuerpo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="alita_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="alita_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="patita1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="patita2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="patita3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="patita4">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="colita">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="raya_cola">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="antena_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="antena_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="piquito_arriba">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="piquito_abajo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.338"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-0.692"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.338"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.632"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.338"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-2.567"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.311"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-0.946"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.311"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.433"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.311"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-2.898"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bolaAtaque1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ataque">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bolaAtaque1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bolaAtaque2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bolaAtaque3">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bolaAtaque4">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="0.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="bolaAtaque5">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0.75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="cuerpo" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
+                <EasingPointKeyFrame KeyTime="00:00:01" Value="0.545,0.486"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="piquito_abajo" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
+                <EasingPointKeyFrame KeyTime="00:00:00" Value="0.5,0.5"/>
+                <EasingPointKeyFrame KeyTime="00:00:00.2000000" Value="0.912,0.187"/>
+                <EasingPointKeyFrame KeyTime="00:00:02" Value="0.912,0.187"/>
+                <EasingPointKeyFrame KeyTime="00:00:02.1000000" Value="0.5,0.5"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="piquito_abajo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.1926"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-2.472"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-2.472"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.1000000" Value="0.1926"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="piquito_abajo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-0.357502"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-4.212"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-4.212"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.1000000" Value="-0.357502"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="piquito_abajo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-29.506"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-38.842"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-38.842"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.1000000" Value="-29.506"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sinEnergia">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="alita_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="20.545"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-37.741"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="alita_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-14.472"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="40.725"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="antena_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="33.699"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-42.314"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="antena_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-14.429"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="47.368"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.55"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="2.25"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.55"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="3.15"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.55"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.975"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.75"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="2.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="3.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1.083"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.75"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="sinVida">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="alita_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="20.545"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-22.988"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="alita_der">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-14.472"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="25.214"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="antena_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="33.699"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-24.579"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="antena_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-14.429"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="65.103"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.045"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="112.637"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.045"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="114.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.045"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="109.874"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.75"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.036"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="122.804"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.036"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="124.786"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.036"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="120.12"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.75"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="antena_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="14.046"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="131.279"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="antena_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="16.093"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="133.113"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="alita_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="14.306"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="117.212"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="cuerpo" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" To="114.471"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" To="109.36"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" To="110.72"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" To="118.278"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita4" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" To="116.187"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="colita" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" To="-7.063"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="colita" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" To="126.925"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="raya_cola" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" To="126.796"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="alita_der">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="15.23"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="138.67"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="piquito_arriba" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" To="112.358"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="antena_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-18.09"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-1.293"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="antena_der">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-86.252"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-68.793"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="alita_izq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="78.935"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="88.913"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="cuerpo" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" To="9.118"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" To="-1.661"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" To="-2.469"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" To="-3.605"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita4" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" To="-3.033"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="10.633"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="10.647"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="10.593"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="12.954"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="12.989"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="12.924"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="raya_cola" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" To="-5.075"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="alita_der">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="2.643"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="9.63"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="piquito_arriba" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" To="11.203"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="cuerpo" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="17.735"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="-4.245"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="-9.949"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="-27.98"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="patita4" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" To="-33.579"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ojoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="17.735"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="reflejoOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="17.735"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="pupilaOjoDer">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="17.735"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="ojoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="17.735"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="reflejoOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="17.735"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="pupilaOjoIzq">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="17.735"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="piquito_abajo">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-18.436"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-10.401"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-16.222"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-13.736"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="colita" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="57.5"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="raya_cola" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="7.171"/>
+            <DoubleAnimation Duration="00:00:00.6000000" Storyboard.TargetName="piquito_arriba" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" To="11.146"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="piquito_abajo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="4.522"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="5.575"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="7.851"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="6.612"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="piquito_abajo" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="56.976"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="94.699"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="113.81"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="112.355"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="piquito_abajo" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
+                <EasingPointKeyFrame KeyTime="00:00:00.6000000" Value="0.5,0.5"/>
+                <EasingPointKeyFrame KeyTime="00:00:00.7000000" Value="0.868,0.264"/>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded"/>
+    </UserControl.Triggers>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="213*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="335*"/>
+            <RowDefinition Height="33*"/>
+        </Grid.RowDefinitions>
+        <Canvas Grid.Column="1" HorizontalAlignment="Center" Height="303" Grid.Row="3" 
+                VerticalAlignment="Center" Width="413">
+            <Image x:Name="imgBrillo" HorizontalAlignment="Left" Height="269.667" VerticalAlignment="Top" Width="403" Canvas.Left="10" Canvas.Top="41.333" Source="Assets/Swablu/chispitas.png" Stretch="Fill" Opacity="0"/>
+            <Grid x:Name="Swablu" Height="123.321" Canvas.Left="57.661" Canvas.Top="92.008" 
+                  Width="295.144" PointerReleased="Swablu_PointerReleased">
+                <Path x:Name="antena_izq" Data="M30.303161,0.5 C54.60369,0.50000051 74.303161,18.40861 74.303161,40.500001 74.303161,42.916245 74.067496,45.282452 73.615928,47.580666 L73.570556,47.795933 73.389457,46.945744 C68.500625,25.658576 44.578059,9.5000005 15.803161,9.5000015 10.754933,9.5000005 5.8560534,9.9973407 1.1830997,10.932462 L0.5,11.076233 0.7185545,10.891275 C8.5323896,4.4349976 18.912288,0.50000051 30.303161,0.5 z" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.995,1.155" Margin="84.344,0,127.8,91.321">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF8CCBF0" Offset="0.05"/>
+                            <GradientStop Color="#FF8FCDF2" Offset="0.243"/>
+                            <GradientStop Color="#FF2DA4DE" Offset="0.364"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="33.699"/>
+                            <TranslateTransform X="-18.09" Y="14.046"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="antena_der" Data="M30.303161,0.5 C54.60369,0.50000051 74.303161,18.40861 74.303161,40.500001 74.303161,42.916245 74.067496,45.282452 73.615928,47.580666 L73.570556,47.795933 73.389457,46.945744 C68.500625,25.658576 44.578059,9.5000005 15.803161,9.5000015 10.754933,9.5000005 5.8560534,9.9973407 1.1830997,10.932462 L0.5,11.076233 0.7185545,10.891275 C8.5323896,4.4349976 18.912288,0.50000051 30.303161,0.5 z" Stretch="Fill" Stroke="Black" RenderTransformOrigin="1.051,1.028" Margin="146.844,0,65.3,91.321">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF90CDF2" Offset="0.05"/>
+                            <GradientStop Color="#FF8DCDF2" Offset="0.243"/>
+                            <GradientStop Color="#FF3EA5D7" Offset="0.364"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-14.429"/>
+                            <TranslateTransform X="-86.252" Y="16.093"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="alita_izq" Data="M62.5,0.5 C71.422852,0.49999809 79.184204,4.6264987 83.163673,10.705139 L83.655922,11.502644 84.029114,11.508979 C87.717941,11.634349 91.164604,13.066889 94.121323,15.474204 L94.591232,15.876887 94.647156,15.758698 C97.432617,10.172662 102.14974,6.4999981 107.5,6.4999967 111.5127,6.4999986 115.16925,8.565872 117.92185,11.955417 L118.12182,12.213719 118.25093,12.145393 C119.1296,11.724074 120.05076,11.499998 121,11.499999 127.07513,11.499998 132,20.678161 132,31.999998 132,41.906607 128.2294,50.171965 123.21688,52.083509 L122.98938,52.159224 123,52.527998 C123,60.259985 115.38884,66.527998 106,66.527998 101.59898,66.527998 97.58857,65.150747 94.569588,62.89105 L94.112541,62.532198 93.271515,63.180895 C90.366806,65.297636 87.038071,66.499998 83.5,66.499998 79.608116,66.499998 75.969543,65.045141 72.870003,62.518732 L72.28727,62.017584 72.064144,62.275171 C68.588516,66.099215 63.574627,68.499998 58,68.499998 51.769535,68.499998 46.239506,65.501093 42.774628,60.868002 L42.427658,60.380079 42.064144,60.766603 C38.588514,64.288748 33.574625,66.499998 28,66.499998 20.457862,66.499998 13.942117,62.452417 10.873605,56.586969 L10.536012,55.899183 9.9855137,55.690752 C4.490087,53.411745 0.5,46.577162 0.5,38.499998 0.5,29.801514 5.1275568,22.544127 11.279279,20.865695 L11.680317,20.770205 11.750695,20.647806 C14.56237,16.020407 19.294998,12.689291 24.841745,11.761291 L25.179224,11.710547 25.126743,11.456753 C25.043285,10.985024 25,10.501877 25,10.009997 25,4.7632928 29.924868,0.50999832 36,0.50999928 40.366501,0.50999832 44.138775,2.7072573 45.915279,5.8913555 L46.024158,6.0993476 46.543274,5.6843481 C50.733917,2.466567 56.340191,0.49999905 62.5,0.5 z" Stretch="Fill" Stroke="#FF0DD7EC" RenderTransformOrigin="0.2,0.529" Margin="0,31.863,158.144,27.458" FocusVisualSecondaryBrush="#99FFFFFF">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA6ECF0" Offset="1"/>
+                            <GradientStop Color="#FFFBF5F5" Offset="0.498"/>
+                            <GradientStop Color="#FFCDE8F5" Offset="0.685"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="20.545"/>
+                            <TranslateTransform X="78.935" Y="14.306"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="cuerpo" Data="M201.3253,347.53398 C201.48594,347.53398 201.54552,347.77401 201.70617,347.77401 201.70617,347.85433 201.80723,347.69462 201.80723,347.77494 203.04964,348.46517 204.20574,348.82821 205.53724,350.56659 206.70231,351.72551 207.20357,353.37622 208.03381,355.03671 208.8598,356.68869 209.49287,358.45866 210.12048,360.18458 210.87242,362.25242 211.09966,363.84709 211.3253,366.32916 211.42926,367.47271 211.44578,368.7236 211.44578,369.94361 211.44578,371.12509 210.87239,371.7614 210.48193,372.83518 209.82356,374.6457 208.30135,375.40014 206.14458,375.96771 204.24393,376.46788 202.76505,377.60476 200.72289,377.77494 198.34758,377.97288 196.42005,378.42326 193.9759,378.0159 192.23775,377.72621 189.12603,377.22034 187.71084,376.08819 186.10051,374.79992 184.67632,374.13801 183.13253,372.59422 181.54123,371.00292 180.84454,370.42838 180,368.37735 178.34595,364.36037 177.35031,360.82024 180.84337,356.32916 181.95395,354.90128 183.17873,353.65711 184.33735,352.11229 185.68498,350.31545 187.05564,349.90131 188.91566,348.7388 192.96664,346.20693 196.01934,345.60003 201.3253,347.53398 z" Stretch="Fill" Stroke="#FF101011" RenderTransformOrigin="0.5,0.5" Margin="106.33,39.998,113.814,9.323">
+                    <Path.Resources>
+                        <Storyboard x:Name="cuerpoShiny" x:Key="cuerpoShiny_key">
+                            <ColorAnimation BeginTime="00:00:01" 
+                                Storyboard.TargetName="ptPupilaDer"
+                                Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" 
+                                From="#FF1D79AA" To="#FFF5EE4E" 
+                                Duration="0:0:02" AutoReverse="False" />
+                        </Storyboard>
+                    </Path.Resources>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.583,0.382">
+                            <GradientStop Color="#FF71BFEB" Offset="0.337"/>
+                            <GradientStop Color="#FF1D79AA" Offset="0.92"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                </Path>
+                <Grid x:Name="patitas"  Margin="129.838,108.595,129.084,1.814">
+                    <Path x:Name="patita1" Data="M3.5921956,0.5 L10.572964,5.6329498 9.8890632,6.0783234 C6.4700664,8.3708572 3.389067,11.16807 0.74181101,14.369658 L0.53909913,14.620813 0.51045254,13.925793 C0.50349811,13.67277 0.50000033,13.418953 0.5,13.164385 0.50000063,8.8367157 1.5108577,4.7266998 3.3267766,1.0240555 z" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Margin="0,0,30.222,1.912">
+                        <Path.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFA4EEF1" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Path.Fill>
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-21.98"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path x:Name="patita2" Data="M3.5921956,0.5 L10.572964,5.6329498 9.8890632,6.0783234 C6.4700664,8.3708572 3.389067,11.16807 0.74181101,14.369658 L0.53909913,14.620813 0.51045254,13.925793 C0.50349811,13.67277 0.50000033,13.418953 0.5,13.164385 0.50000063,8.8367157 1.5108577,4.7266998 3.3267766,1.0240555 z" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Margin="4.262,1.912,24.96,0">
+                        <Path.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFA4EEF1" Offset="0"/>
+                                <GradientStop Color="#FFA4EEF1" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Path.Fill>
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-27.684"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path x:Name="patita3" Data="M3.5921956,0.5 L10.572964,5.6329498 9.8890632,6.0783234 C6.4700664,8.3708572 3.389067,11.16807 0.74181101,14.369658 L0.53909913,14.620813 0.51045254,13.925793 C0.50349811,13.67277 0.50000033,13.418953 0.5,13.164385 0.50000063,8.8367157 1.5108577,4.7266998 3.3267766,1.0240555 z" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Margin="23.062,0.425,5.16,1.487">
+                        <Path.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF95EEEE" Offset="0.021"/>
+                                <GradientStop Color="White" Offset="1"/>
+                                <GradientStop Color="#FF111111" Offset="1"/>
+                                <GradientStop Color="#FFA4EEF1" Offset="0.259"/>
+                            </LinearGradientBrush>
+                        </Path.Fill>
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="0.988" ScaleY="1.012"/>
+                                <SkewTransform AngleX="1.443"/>
+                                <RotateTransform Angle="-45.715"/>
+                                <TranslateTransform X="-0.15" Y="1.737"/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path x:Name="patita4" Data="M3.5921956,0.5 L10.572964,5.6329498 9.8890632,6.0783234 C6.4700664,8.3708572 3.389067,11.16807 0.74181101,14.369658 L0.53909913,14.620813 0.51045254,13.925793 C0.50349811,13.67277 0.50000033,13.418953 0.5,13.164385 0.50000063,8.8367157 1.5108577,4.7266998 3.3267766,1.0240555 z" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Margin="27.222,3.526,0,0.386">
+                        <Path.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF95EEEE" Offset="0.021"/>
+                                <GradientStop Color="White" Offset="1"/>
+                                <GradientStop Color="#FF111111" Offset="1"/>
+                                <GradientStop Color="#FFA4EEF1" Offset="0.259"/>
+                            </LinearGradientBrush>
+                        </Path.Fill>
+                        <Path.RenderTransform>
+                            <CompositeTransform Rotation="-51.314" ScaleX="0.99" ScaleY="1.011" SkewX="1.426" TranslateX="0.176" TranslateY="-1.949"/>
+                        </Path.RenderTransform>
+                    </Path>
+                </Grid>
+                <Grid x:Name="ojoDerecho" Margin="150.339,60.567,136.805,52.754">
+                    <Ellipse x:Name="ojoDer" Stroke="Black" Fill="Black" RenderTransformOrigin="0.5,0.5">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="reflejoOjoDer" Stroke="White" Fill="White" RenderTransformOrigin="0.5,0.5" Margin="2.167,1,1.833,5">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="pupilaOjoDer" Stroke="#FF0B157A" Fill="#FF06354E" RenderTransformOrigin="0.5,0.5" Margin="2.667,6.334,2.333,0.666">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                </Grid>
+                <Grid x:Name="ojoIzquierdo" Margin="116.734,58.233,170.41,55.088">
+                    <Ellipse x:Name="ojoIzq" Stroke="Black" Fill="Black" RenderTransformOrigin="0.5,0.5">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="reflejoOjoIzq" Stroke="White" Fill="White" RenderTransformOrigin="0.5,0.5" Margin="1.834,1,2.166,5">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="pupilaOjoIzq" Stroke="#FF0B157A" Fill="#FF0B157A" RenderTransformOrigin="0.5,0.5" Margin="2.334,6.334,2.666,0.666">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                </Grid>
+                <Path x:Name="piquito_abajo" Data="M2.4885079,0.47502691 L9.4378055,0.52680657 7.9581028,2.4230546 C6.9927455,4.1422646 4.3158062,4.3327881 2.7654459,4.3810419 0.92395042,4.438357 -0.40064923,1.9514618 -0.53815428,0.4024603 z" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Fill="#FFC5DFF4" Canvas.ZIndex="1" Margin="130.585,77.751,143.559,35.57">
+                    <Path.RenderTransform>
+                        <CompositeTransform Rotation="-29.506" TranslateX="0.19259970950563243" TranslateY="-0.35750213197133984"/>
+                    </Path.RenderTransform>
+                </Path>
+                <Grid x:Name="cola" Margin="174.839,107.499,91.305,0">
+                    <Path x:Name="colita" Stroke="Black" Data="M27.516773,1.4673819 L27.65543,1.4499049 C27.678616,1.5641756 27.077232,1.9905668 26.973087,2.0427732 26.072163,2.494394 18.65302,7.0823236 12.025603,7.0823236 5.5017396,7.0823236 0.14024857,7.3421868 -0.024031661,4.9105843 L0.27376798,-2.5977541 z" RenderTransformOrigin="0.534,0.481" Stretch="Fill" Margin="0,0,0,4.822">
+                        <Path.Fill>
+                            <LinearGradientBrush EndPoint="1.382,1.484" StartPoint="0.178,0.05">
+                                <GradientStop Color="#FF2995C8" Offset="0.371"/>
+                                <GradientStop Color="#FF73C4EF" Offset="0.394"/>
+                            </LinearGradientBrush>
+                        </Path.Fill>
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="39.765"/>
+                                <TranslateTransform X="-2.9260717057361809" Y="0.92637475760562"/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path x:Name="raya_cola" Data="M238.5,204.36771 C241.21505,206.18605 243.79832,209.44521 247.33333,210.03438 247.33333,210.14549 247.33333,210.2566 247.33333,210.36771 248.04115,210.60365 248.79242,210.92553 249.5,211.20105" Fill="#FF4CC2F7" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Margin="8.086,1.822,5.914,0">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-10.564"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Grid>
+                <Path x:Name="alita_der" Data="M62.5,0.5 C71.422852,0.49999809 79.184204,4.6264987 83.163673,10.705139 L83.655922,11.502644 84.029114,11.508979 C87.717941,11.634349 91.164604,13.066889 94.121323,15.474204 L94.591232,15.876887 94.647156,15.758698 C97.432617,10.172662 102.14974,6.4999981 107.5,6.4999967 111.5127,6.4999986 115.16925,8.565872 117.92185,11.955417 L118.12182,12.213719 118.25093,12.145393 C119.1296,11.724074 120.05076,11.499998 121,11.499999 127.07513,11.499998 132,20.678161 132,31.999998 132,41.906607 128.2294,50.171965 123.21688,52.083509 L122.98938,52.159224 123,52.527998 C123,60.259985 115.38884,66.527998 106,66.527998 101.59898,66.527998 97.58857,65.150747 94.569588,62.89105 L94.112541,62.532198 93.271515,63.180895 C90.366806,65.297636 87.038071,66.499998 83.5,66.499998 79.608116,66.499998 75.969543,65.045141 72.870003,62.518732 L72.28727,62.017584 72.064144,62.275171 C68.588516,66.099215 63.574627,68.499998 58,68.499998 51.769535,68.499998 46.239506,65.501093 42.774628,60.868002 L42.427658,60.380079 42.064144,60.766603 C38.588514,64.288748 33.574625,66.499998 28,66.499998 20.457862,66.499998 13.942117,62.452417 10.873605,56.586969 L10.536012,55.899183 9.9855137,55.690752 C4.490087,53.411745 0.5,46.577162 0.5,38.499998 0.5,29.801514 5.1275568,22.544127 11.279279,20.865695 L11.680317,20.770205 11.750695,20.647806 C14.56237,16.020407 19.294998,12.689291 24.841745,11.761291 L25.179224,11.710547 25.126743,11.456753 C25.043285,10.985024 25,10.501877 25,10.009997 25,4.7632928 29.924868,0.50999832 36,0.50999928 40.366501,0.50999832 44.138775,2.7072573 45.915279,5.8913555 L46.024158,6.0993476 46.543274,5.6843481 C50.733917,2.466567 56.340191,0.49999905 62.5,0.5 z" Stretch="Fill" Stroke="#FF0DD7EC" RenderTransformOrigin="0.045,0.54" Margin="165.144,31.171,0,31.15">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFA8ECF0" Offset="1"/>
+                            <GradientStop Color="#FFFBF5F5" Offset="0.566"/>
+                            <GradientStop Color="#FF88E9EE" Offset="0.984"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-14.472"/>
+                            <TranslateTransform X="2.643" Y="15.23"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path x:Name="piquito_arriba" Data="M104.95382,88.380208 C96.232903,91.863416 96.191558,91.558598 96.081969,91.662152 93.736616,93.878346 99.106185,90.148033 96.081969,91.660142 92.206839,93.597707 84.337164,98.515116 82.628713,103.64047 81.520614,104.00984 83.450528,102.1828 83,103.53438 82.833333,103.53438 82.666667,103.53438 82.5,103.53438 81.50192,106.52862 79.977459,109.55341 78.75,112.53438 77.305756,116.04183 77.532642,119.12117 76.75,123.03438 75.112145,131.22365 75.471413,136.75579 82.25,143.53438 89.302996,150.58738 90.890556,147.2716 101.75,146.28438 105.05623,145.98381 108.95381,144.43334 112.25,143.53438 115.86231,142.5492 119.4217,141.50004 123,140.78438 126.45343,140.09369 129.28374,138.69655 132.75,137.78438 136.09186,136.90494 138.28937,135.74501 141,133.03438 146.66312,127.37126 146.98744,120.57373 143.16667,111.29471 141.81399,108.00964 141.09187,104.91556 139.25,101.78438 137.62097,99.015036 136.14744,94.61988 133.11204,93.652624 120.46548,89.622697 128.68158,92.041859 117.88425,89.369837 117.96759,89.369837 104.87048,88.380208 104.95382,88.380208 z" Stretch="Fill" Stroke="Black" RenderTransformOrigin="0.5,0.5" Margin="123.514,59.37,146.63,39.951">
+                    <Path.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.24,0.591">
+                            <GradientStop Color="#FFF5F9FB" Offset="0.173"/>
+                            <GradientStop Color="#FFA7CFF0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Path.Fill>
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-6.589"/>
+                            <TranslateTransform X="0" Y="0"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+            </Grid>
+            <Ellipse x:Name="bolaAtaque1" Height="18.666" Canvas.Left="172.06" Stroke="#FFCCCCF3" Canvas.Top="172.007" Width="18.404" Opacity="0">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE2C9C9" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="bolaAtaque2" Height="30" Canvas.Left="147.761" Stroke="#FFCCCCF3" Canvas.Top="180.007" Width="30" Opacity="0">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE2C9C9" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="bolaAtaque3" Height="40" Canvas.Left="118.991" Stroke="#FFCCCCF3" Canvas.Top="188.007" Width="40" Opacity="0">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE2C9C9" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="bolaAtaque4" Height="50" Canvas.Left="80.325" Stroke="#FFCCCCF3" Canvas.Top="198.674" Width="50" Opacity="0">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE2C9C9" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse x:Name="bolaAtaque5" Height="69" Canvas.Left="23.658" Stroke="#FFCCCCF3" Canvas.Top="214.007" Width="69" Opacity="0">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE2C9C9" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Canvas>
+    </Grid>
+</UserControl>
