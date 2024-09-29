@@ -8,8 +8,8 @@ Diseñada en UWP.
 
 ##  🗄 Tabla de Contenido
 
-- [Creadores](construction_worker-creadores)
-- [Video](video_camera-video)
+- [Creadores](#construction_worker-creadores)
+- [Video](#video_camera-video)
 - [Contacto](#-contacto)
 
 ## 	:construction_worker: Creadores
